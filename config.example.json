@@ -1,0 +1,4 @@
+{
+  "apiUrl": "https://api.hueymagoos.com/location-health/signage-heartbeat",
+  "apiKey": "REPLACE_WITH_SIGNAGE_AGENT_API_KEY"
+}
