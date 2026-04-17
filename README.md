@@ -154,7 +154,7 @@ install location it prompts for the API key.
    ```powershell
    powershell -ExecutionPolicy Bypass -File .\install.ps1
    ```
-4. Expected output:
+7. Expected output:
    ```
    Huey Magoo's Signage Heartbeat Agent - Install
    [OK] Staged files to C:\ProgramData\HueyMagoos\SignageHeartbeat
@@ -163,8 +163,8 @@ install location it prompts for the API key.
    [OK] Initial heartbeat task state: Ready
    Install complete.
    ```
-5. Verify by watching `C:\ProgramData\HueyMagoos\SignageHeartbeat\heartbeat.log`
-   — within ~60 seconds you should see an `OK heartbeat accepted`
+8. Verify by watching `C:\ProgramData\HueyMagoos\SignageHeartbeat\heartbeat.log`
+   - within ~60 seconds you should see an `OK heartbeat accepted`
    entry.
 
 **What install.ps1 does, precisely:**
