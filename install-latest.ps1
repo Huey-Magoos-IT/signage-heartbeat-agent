@@ -86,9 +86,9 @@ if (Test-Path $existingConfig) {
     $apiKey = Read-Host -AsSecureString "SIGNAGE_AGENT_API_KEY (provided by Huey IT out-of-band)"
     $plain = [System.Runtime.InteropServices.Marshal]::PtrToStringAuto(
         [System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($apiKey))
-    $apiUrl = Read-Host "API URL [https://api.hueymagoos.com/location-health/signage-heartbeat]"
+    $apiUrl = Read-Host "API URL [https://puvzjk01yl.execute-api.us-east-2.amazonaws.com/prod/location-health/signage-heartbeat]"
     if ([string]::IsNullOrWhiteSpace($apiUrl)) {
-        $apiUrl = "https://api.hueymagoos.com/location-health/signage-heartbeat"
+        $apiUrl = "https://puvzjk01yl.execute-api.us-east-2.amazonaws.com/prod/location-health/signage-heartbeat"
     }
     $config = @{ apiUrl = $apiUrl; apiKey = $plain } | ConvertTo-Json
     Set-Content -Path $targetConfig -Value $config -Encoding utf8

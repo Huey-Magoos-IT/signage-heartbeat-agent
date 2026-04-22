@@ -113,7 +113,8 @@ Session 0 (services, isolated from desktop)
           v
 +-----------------------------------+
 | Huey Magoo's IT portal            |
-| api.hueymagoos.com                |
+| puvzjk01yl.execute-api.us-east-2  |
+|   .amazonaws.com/prod             |
 |  POST /location-health/signage-heartbeat |
 +-----------------------------------+
 ```
@@ -234,7 +235,7 @@ captured as evidence.
 ## 8. Data sent to Huey Magoo's
 
 **Every 5 minutes, one POST:**
-- Request URL: `https://api.hueymagoos.com/location-health/signage-heartbeat`
+- Request URL: `https://puvzjk01yl.execute-api.us-east-2.amazonaws.com/prod/location-health/signage-heartbeat`
   (TLS 1.2+)
 - Request headers: `Authorization: Bearer <shared API key>`,
   `Content-Type: application/json`
